@@ -20,9 +20,10 @@ Follow these instructions carefully.
 
 A diff is a specific file format that tells you the difference between lines in a file and, optionally, words on that line. It contains enough context to make sense to humans and enough information to allow a machine to apply a difference to a set of files such that:
 
-$$
+```math
 A = B \circ \text{Apply}(\text{Diff}(A, B))
-$$
+```
+
 That is, the difference between A and B can allow A to be transformed into B and vice versa using a function that **applies** said difference.
 
 Let's now look at an example diff:
