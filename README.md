@@ -18,7 +18,7 @@ Follow these instructions carefully.
 
 ## Diffing
 
-A diff is a speciifc file format that tells you the difference between lines in a file and optionally words on that line. It contains enough context to make sense to humans and enough information to allow a machine to apply a difference to a set of files such that:
+A diff is a specific file format that tells you the difference between lines in a file and optionally words on that line. It contains enough context to make sense to humans and enough information to allow a machine to apply a difference to a set of files such that:
 
 $$
 A = B \circ \text{Apply}(\text{Diff}(A, B))
