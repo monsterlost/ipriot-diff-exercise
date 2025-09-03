@@ -2,7 +2,6 @@
 
 This is a repo to help you practice diffing!
 
-
 ## Instructions
 
 To get started:
@@ -10,6 +9,7 @@ To get started:
 1. Fork this repo.
 ⚠️ IMPORTANT: Fork all branches. Not just `main`
 2. Clone your forked repo:
+
 ```bash
 git clone <your-forked-repo-url>
 ```
@@ -49,27 +49,28 @@ This is a repo to help you practice diffing!
 ```
 
 Fill in what each of the elements of the diff mean (if you are not sure just guess!):
-**①**:
-> Insert your explanation here
 
-**②**:
-> Insert your answer here
+
+**①** 
+Shows this is a diff in git format. It is followed by the file names being compared. The `a/` and `b/` 'folders' are like virtual folders that usually represent different versions with the newer version being b/ and the older version being a/.
+
+**②**
+Shows the first and second commit hashes. These are used to identify the commits that are being compared. This is useful for git to know which commit to apply the diff to. The number on the end is the file mode, and, well, you don't need to worry about that (except if you get a different number, then you should worry).
 
 **③**:
-> Insert your explanation here
+The symbol associated with each file. Indicates which file is doing the inserting. Note: if the files have a temporal relationship, then an insertion in the past (exists in the past but not in the present) indicates deletion in the present. But notice that files don't have to have a temporal relationship in which case you must remember to treat the symbols as just saying who originated the change.
 
-**④**:
-> Insert your answer here
+**④**
+This is a section header. It tells the line number from each file that is being compared (the plus and minus are the originator indicator not negative and positive numbers!!!)
 
 **⑤**:
-> Insert your answer here
+The words "fork this repo" I hope you have a better answer than me!
 
 **⑥**:
-> Insert your explanation here
+In this example, one line is replaced and 3 additional lines are added in the new version
 
 **⑦**:
-> Insert your answer here
-
+In this case there is a common whitespace in both files bollowed by a change in one line (notice that only one word changed, but the diff does not indicate this). Notice also that this is redundant given the next line!
 
 Notice that the diff above only showed different **lines** in the file. Including whitespaces. We can also highlight changes at the word level with the --word-diff option:
 
@@ -102,10 +103,11 @@ Fill in what each of the elements of the diff means (if you are not sure guess!)
 See if you can guess the overall command to produce the above diffs:
 
 ```bash
-? your guess is as good as mine
+git diff --word-diff
 ```
 
- ## Stashing
+## Stashing
+>
 > Make sure you attempted to fill in your explanation above!
 
 Guess what!? Your lecturer has also got an answer to these questions! They are in another branch, though. 
@@ -131,7 +133,7 @@ Lucky for you, there is one quality of life option we didn't mention: `git stash
 This command *stashes* your changes safely away so you can return to them later. It is like a commit to the "not sure what to do with this yet" branch.
 
 So let's do that:
-    
+
 ```bash
 git stash
 ```
